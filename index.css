@@ -1,0 +1,36 @@
+html, body {
+	min-height: 100%;
+	margin: 0;
+}
+
+main {
+	width: min(100vw, 65ch);
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.controls {
+	width: 100%;
+	gap: 1em;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.controls .count {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	gap: .7em;
+}
+
+.controls .count > button {
+	padding-inline: 1em;
+}
+
+.controls .count > span {
+	display: flex;
+	align-items: center;
+	gap: inherit;
+	justify-content: center;
+}
+
